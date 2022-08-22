@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+
+:root{
+
+  --selected-theme-background-colour : var(--yellow-theme-background-colour);
+  --selected-theme-main-colour: var(--yellow-theme-main-colour);
+  --selected-theme-sub-text-colour: var(--yellow-theme-sub-text-colour);
+  --selected-theme-nav-background-colour: var(--yellow-theme-nav-background-colour);
+
+
+  /* primnary colour yellow */
+  --yellow-theme-background-colour: #1d1d1d;
+  --yellow-theme-main-colour:#ffdd40;
+  --yelow-theme-sub-text-colour:#ffffff;
+  --yellow-theme-nav-background-colour:#181818;
+
+  --font-base : "Roboto Slab", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
+
+html{
+  font-size: 62.5%;
+  height: 100%;
+  }
+
+  body{
+    background: var(--selected-theme-background-colour);
+    height: 100%;
+  }
+
+  #root{
+    height: 100%;
+  }
