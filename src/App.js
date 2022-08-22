@@ -6,6 +6,7 @@ import Contact from './containers/contact'
 import Portfolio from './containers/portfolio'
 import Resume from './containers/resume'
 import Skills from './containers/skills'
+import Navbar from './components/navBar'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       {/* particles js */}
 
       {/* navbar component */}
+      <Navbar/>
 
       {/* main page content */}
       <Routes>
