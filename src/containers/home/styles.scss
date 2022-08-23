@@ -1,0 +1,60 @@
+.home{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            color: var(--selected-theme-main-colour);
+            margin: 0px;
+            font-weight: 400;
+            font-size: 8rem;
+            line-height: 10rem;
+            position: relative;
+            // TODO: Better Font management in themes
+            font-family: "Inconsolata",Consolas,monospace;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typingEffect 2.5s steps(30, end)// delay iteration-count direction fill-mode;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width:550px) {
+    .home__text-wrapper h1{
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+}
+
+@media only screen and (min-width : 551px) and (max-width:768px) {
+    .home__text-wrapper h1{
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+}
+@media only screen and (min-width : 769px) and (max-width:990px) {
+    .home__text-wrapper h1{
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+}
+
+
+@keyframes typingEffect {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+    

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './containers/home'
 import About from './containers/about'
@@ -15,7 +15,7 @@ import particlesConfig from './helpers/particlesConfig';
 
 
 function App() {
-  const particlesInit=async (main)=>{
+  const particlesInit = async (main) => {
     await loadFull(main);
   }
   const location = useLocation();
@@ -25,22 +25,23 @@ function App() {
     <div className="App">
       {/* particles js */}
       {renderOnlyOnHomePage && <Particles className="particles" params={particlesConfig} init={particlesInit} />}
-
-
-      {/* navbar component */}
-      <Navbar/>
-
+      <div className='App__navbar-wrapper'>
+        {/* navbar component */}
+        <Navbar />
+      </div>
       {/* main page content */}
-      <Routes>
-        {/* create all the routes here */}
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/skills" element={<Skills />} />
-      </Routes>
 
+      <div className='App__main-content-wrapper'>
+        <Routes>
+          {/* create all the routes here */}
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/skills" element={<Skills />} />
+        </Routes>
+      </div>
     </div>
   );
 }
