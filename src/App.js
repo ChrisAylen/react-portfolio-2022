@@ -11,6 +11,7 @@ import Navbar from './components/navBar'
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import particlesConfig from './helpers/particlesConfig';
+import Theme from './components/theme';
 
 
 
@@ -32,6 +33,7 @@ function App() {
       {/* main page content */}
 
       <div className='App__main-content-wrapper'>
+        <Theme/>
         <Routes>
           {/* create all the routes here */}
           <Route path="/" element={<Home />} />
