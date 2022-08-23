@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaReact, FaBars } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
 import { navMenus } from "./config";
+import "./styles.scss";
 
 const Navbar = () => {
   const [click, setClick] = React.useState(false);
@@ -15,7 +16,13 @@ const Navbar = () => {
           <Link to={"/"} className="navbar__container__logo">
             <FaReact size={30} />
           </Link>
-          <ul className="navbar__container__menu">
+          <ul
+            className={
+              click
+                ? "navbar__container__menu__active"
+                : "navbar__container__menu"
+            }
+          >
             {navMenus.map((item, key) => (
               <li key={key} className="navbar__container__menu__item">
                 <Link
@@ -26,11 +33,9 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-            <div className="nav-icon" onClick={handleClick}></div>
-            {
-            click ? <HiX size={30}/> : <FaBars size={30} />
-            }
           </ul>
+          <div className="nav-icon" onClick={handleClick}></div>
+          {click ? <HiX size={30} /> : <FaBars size={30} />}
         </div>
       </nav>
     </div>
