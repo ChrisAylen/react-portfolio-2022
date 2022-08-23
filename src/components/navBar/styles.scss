@@ -7,7 +7,7 @@
     position: sticky;
     top: 0;
     z-index: 20;
-    background-color: var(--selected-theme-background-colour);
+    background-color: var(--selected-theme-nav-background-colour);
 
     &__container{
         display: flex;
@@ -17,12 +17,12 @@
         height: 80px;
         padding: 0px 20px;
 
-            
+        //TODO: Alight logo left: Logo is not sitting to the left and appears centered    
         &__logo{
             color: var(--selected-theme-main-colour);
             cursor: pointer;
             font-size: 2rem;
-            flex-grow: 1
+            flex-grow: 1;
         }
 
         &__menu{
@@ -45,7 +45,59 @@
                     width: 100%;
                     background: var(--selected-theme-main-colour);
                 }
+                &__links{
+                    color: var(--selected-theme-main-colour);
+                    text-decoration: none;
+                    padding: 0rem 1rem;
+                }
+            }
+            &__item:last-child{
+                margin: 0px;
             }
         }
+    }
+}
+.nav-icon{
+    display: none;
+}
+
+@media only screen and (max-width : 768px) {
+    .navbar__container__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+
+        &__item{
+            // TODO: Could use a theme variable here
+            border-bottom: 1px solid #282828;
+            margin: 0px;
+            padding: 20px 0px;
+
+        }
+
+        &.active{
+            left: 0px;
+            // TODO: Could use a theme variable here
+            background: #181818;
+            opacity: 1;
+            z-index: 1;
+            transition: all 0.5s ease;
+        }
+    }
+
+
+
+
+
+    .nav-icon{
+        display: block;
+        cursor: pointer;
+        color: var(--selected-theme-main-colour);
     }
 }

@@ -1,5 +1,6 @@
-import React from "react";
-import { icons } from "react-icons";
+import React, { useState } from "react";
+//import React from "react";
+//import { icons } from "react-icons";
 import { Link } from "react-router-dom";
 import { FaReact, FaBars } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
@@ -7,7 +8,7 @@ import { navMenus } from "./config";
 import "./styles.scss";
 
 const Navbar = () => {
-  const [click, setClick] = React.useState(false);
+  const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   return (
     <div>
@@ -19,7 +20,7 @@ const Navbar = () => {
           <ul
             className={
               click
-                ? "navbar__container__menu__active"
+                ? "navbar__container__menu active"
                 : "navbar__container__menu"
             }
           >
@@ -34,8 +35,9 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className="nav-icon" onClick={handleClick}></div>
-          {click ? <HiX size={30} /> : <FaBars size={30} />}
+          <div className="nav-icon" onClick={handleClick}>
+            {click ? <HiX size={30} /> : <FaBars size={30} />}
+          </div>
         </div>
       </nav>
     </div>
