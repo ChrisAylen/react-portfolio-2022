@@ -1,4 +1,5 @@
 export default {
+  // TODO: keep particles slower
     background: {
       color: {
         value: "#1d1d1d",

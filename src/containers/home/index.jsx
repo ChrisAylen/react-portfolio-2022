@@ -21,6 +21,7 @@ const Home = () => {
         >
       <div className="contact-me">
         <div className="contact-me__buttons-wrapper">
+            {/*TODO: Links need adding  */}
           <button>Hire me</button>
           <a>Download CV</a>
         </div>
