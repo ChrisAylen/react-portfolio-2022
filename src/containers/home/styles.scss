@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     &__text-wrapper{
         display: flex;
@@ -22,6 +23,42 @@
             overflow: hidden;
             white-space: nowrap;
             animation: typingEffect 2.5s steps(30, end)// delay iteration-count direction fill-mode;
+        }
+
+    }
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+        &__buttons-wrapper{
+            display: flex;
+            gap: 10px;
+            button, a {
+                cursor: pointer;
+                padding: 10px 70px;
+                font-size: 2rem;
+                background: transparent;
+                color: var(--selected-theme-main-colour);
+                border: 1.5px solid var(--selected-theme-main-colour);
+                border-radius: 4px;
+                font-weight: 500px;
+                //TODO: Hover seems broken
+                &:hover {
+                    color: #000000;
+                    background: var(--selected-theme-main-colour);
+                }
+            }
+        }
+        &__socials-wrapper{
+            display: flex;
+            gap: 10px;
+            
+            svg{
+                color: var(--selected-theme-main-colour);
+                cursor: pointer;
+            }
         }
 
     }
