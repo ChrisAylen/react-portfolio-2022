@@ -12,7 +12,7 @@ export const navMenus = [
       to: "/skills",
     },
     {
-      label: "RESUME",
+      label: "CV/RESUME",
       to: "/resume",
     },
     {
