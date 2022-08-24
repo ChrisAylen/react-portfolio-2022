@@ -30,16 +30,12 @@ const About = () => {
           >
             <h3 className="developerContent"> SDLC Consultant</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Fringilla phasellus faucibus scelerisque eleifend donec pretium.
-              Blandit aliquam etiam erat velit scelerisque in dictum non
-              consectetur. Cursus turpis massa tincidunt dui. Volutpat est velit
-              egestas dui id ornare arcu odio ut. Vitae et leo duis ut diam
-              quam. Et netus et malesuada fames ac. Mi sit amet mauris commodo
-              quis. Volutpat odio facilisis mauris sit amet massa vitae. Sapien
-              faucibus et molestie ac feugiat sed lectus vestibulum. Quis
-              hendrerit dolor magna eget est lorem.
+              A leader, with software engineering roots, change management
+              specialist and agile evangelist who operates at c-level.
+              Demonstrable turnaround experience in leading, large-scale
+              departments, projects and programmes, in both internal and
+              outsource environments. Extensive experience with agile software
+              development and delivery using multiple technologies.
             </p>
           </Animate>
           <Animate
