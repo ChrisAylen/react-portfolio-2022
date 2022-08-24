@@ -7,7 +7,7 @@
     position: sticky;
     top: 0;
     z-index: 20;
-    background-color: var(--selected-theme-nav-background-colour);
+    background-color: var(--selected-theme-nav-background-color);
 
     &__container{
         display: flex;
@@ -19,7 +19,7 @@
 
         //TODO: Alight logo left: Logo is not sitting to the left and appears centered    
         &__logo{
-            color: var(--selected-theme-main-colour);
+            color: var(--selected-theme-main-color);
             cursor: pointer;
             font-size: 2rem;
             flex-grow: 1;
@@ -43,10 +43,10 @@
                 }
                 &:hover::after{
                     width: 100%;
-                    background: var(--selected-theme-main-colour);
+                    background: var(--selected-theme-main-color);
                 }
                 &__links{
-                    color: var(--selected-theme-main-colour);
+                    color: var(--selected-theme-main-color);
                     text-decoration: none;
                     padding: 0rem 1rem;
                 }
@@ -98,6 +98,6 @@
     .nav-icon{
         display: block;
         cursor: pointer;
-        color: var(--selected-theme-main-colour);
+        color: var(--selected-theme-main-color);
     }
 }
