@@ -28,24 +28,25 @@ const Portfolio = () => {
             <li
               onClick={() => handleFilter(option.id)}
               key={`filter${option.id}`}
+              className={option.id === filterValue ? 'active' : ''}
             >
               {option.label}
             </li>
           ))}
         </ul>
         <div className="portfolio__content__cards">
-          {filteredPortfolioData.map(
-            (item, key) => (
+          {filteredPortfolioData.map((item, key) => (
               console.log(item, key),
-              (
-                <div key={key} className="portfolio__content__cards__item">
+              
+                <div key={key} 
+                className="portfolio__content__cards__item">
                   <div className="portfolio__content__cards__item__image-wrapper">
                     <a>
                       <img src={item.image} alt="project image" />
                     </a>
                   </div>
                 </div>
-              )
+              
             )
           )}
         </div>
