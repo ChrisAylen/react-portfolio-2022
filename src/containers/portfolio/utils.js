@@ -9,48 +9,48 @@ import Image7 from "../../images/image7.PNG";
 export const portfolioData = [
     {
         sectionId: 2,
-        projecName: 'Project Bank Heist',
+        projectName: 'Project Bank Heist',
         projectLink: 'https://github.com/ChrisAylen/project-bank-heist',
         image: Image1
 
     },
     {
         sectionId: 2,
-        projecName: 'Conan Launcher',
+        projectName: 'Conan Launcher',
         projectLink: 'https://www.google.com',
         image: Image2
 
     },
     {
         sectionId: 2,
-        projecName: 'Daily Planner',
+        projectName: 'Daily Planner',
         projectLink: 'https://www.google.com',
         image: Image3
 
     },
     {
         sectionId: 2,
-        projecName: 'Movie Translator',
+        projectName: 'Movie Translator',
         projectLink: 'https://www.google.com',
         image: Image4
 
     },
     {
         sectionId: 2,
-        projecName: 'Note Taker',
+        projectName: 'Note Taker',
         projectLink: 'https://www.google.com',
         image: Image5
 
     },
     {
         sectionId: 3,
-        projecName: 'Password Generator',
+        projectName: 'Password Generator',
         projectLink: 'https://www.google.com',
         image: Image6
 
     },    {
         sectionId: 3,
-        projecName: 'Weather Dashboard',    
+        projectName: 'Weather Dashboard',    
         projectLink: 'https://www.google.com',
         image: Image7
 
