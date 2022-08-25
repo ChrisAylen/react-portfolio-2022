@@ -22,11 +22,13 @@ function App() {
   }
   const location = useLocation();
   const renderOnlyOnHomePage = location.pathname === '/';
+  const renderIfHomePAgeIsGit = location.pathname === '/react-portfolio-2022';
 
   return (
     <div className="App">
       {/* particles js */}
       {renderOnlyOnHomePage && <Particles className="particles" params={particlesConfig} init={particlesInit} />}
+      {renderIfHomePAgeIsGit && <Particles className="particles" params={particlesConfig} init={particlesInit} />}
       <div className='App__navbar-wrapper'>
         {/* navbar component */}
         <Navbar />
@@ -38,6 +40,7 @@ function App() {
         <Routes>
           {/* create all the routes here */}
           <Route path="/" element={<Home />} />
+          <Route path="/react-portfolio-2022" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
