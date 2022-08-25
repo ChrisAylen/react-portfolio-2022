@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.scss";
 import { Animate } from "react-simple-animate";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-
+//TODO:Fix home route not loading by default
 const Home = () => {
   return (
     <section className="home" id="home">
