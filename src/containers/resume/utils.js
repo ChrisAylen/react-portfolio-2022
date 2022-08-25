@@ -1,4 +1,6 @@
 export const data = {
+    //TODO:Finsih this experience section
+    //TODO: Add company icons to each card
     experience: [
         {
             title: "Head Of Technology",

@@ -6,6 +6,7 @@ import Image5 from "../../images/image5.png";
 import Image6 from "../../images/image6.png";
 import Image7 from "../../images/image7.PNG";
 
+//TODO: Add projects
 export const portfolioData = [
     {
         sectionId: 2,
@@ -17,41 +18,41 @@ export const portfolioData = [
     {
         sectionId: 2,
         projectName: 'Conan Launcher',
-        projectLink: 'https://www.google.com',
+        projectLink: 'https://github.com/ChrisAylen/dwmConanLauncher',
         image: Image2
 
     },
     {
         sectionId: 2,
         projectName: 'Daily Planner',
-        projectLink: 'https://www.google.com',
+        projectLink: 'https://github.com/ChrisAylen/DayPlanner',
         image: Image3
 
     },
     {
         sectionId: 2,
         projectName: 'Movie Translator',
-        projectLink: 'https://www.google.com',
+        projectLink: 'https://github.com/ChrisAylen/Project-1-Fork',
         image: Image4
 
     },
     {
         sectionId: 2,
         projectName: 'Note Taker',
-        projectLink: 'https://www.google.com',
+        projectLink: 'https://github.com/ChrisAylen/Note-Taker',
         image: Image5
 
     },
     {
-        sectionId: 3,
+        sectionId: 2,
         projectName: 'Password Generator',
-        projectLink: 'https://www.google.com',
+        projectLink: 'https://github.com/ChrisAylen/PasswordGenerator',
         image: Image6
 
     },    {
-        sectionId: 3,
+        sectionId: 2,
         projectName: 'Weather Dashboard',    
-        projectLink: 'https://www.google.com',
+        projectLink: 'https://github.com/ChrisAylen/WeatherDashboard',
         image: Image7
 
     },

@@ -8,9 +8,10 @@ const Home = () => {
     <section className="home" id="home">
       <div className="home__text-wrapper">
         <h1>
-          Hello, I'm Chris
+          I'm Chris.
           <br />
-          full stack extremo.
+          A software <br/>
+          development <br/> consultant
         </h1>
       </div>
       <Animate
@@ -22,12 +23,19 @@ const Home = () => {
       <div className="contact-me">
         <div className="contact-me__buttons-wrapper">
             {/*TODO: Links need adding  */}
-          <button>Hire me</button>
-          <a>Download CV</a>
+            
+          {/* <button>Hire me</button> */}
+          
+          {/* <a>Download CV</a> */}
         </div>
+        
         <div className="contact-me__socials-wrapper">
+        <a href="https://www.linkedin.com/in/chris-aylen-agile-software-development/">
             <FaLinkedin size={32} />
+          </a>
+          <a href="https://github.com/chrisaylen">
             <FaGithub size={32} />
+          </a>
         </div>
       </div>
       </Animate>

@@ -38,7 +38,7 @@ const Portfolio = () => {
         <div className="portfolio__content__cards">
           {filteredPortfolioData.map(
             (item, key) => (
-              console.log(item, key),
+              
               (
                 <div
                   onMouseEnter={() => setHoveredIndex(key)}
@@ -56,7 +56,9 @@ const Portfolio = () => {
                       <div>
                         <p>
                           {item.projectName}</p>
+                          <a href={item.projectLink}>
                           <button>Visit</button>
+                          </a>
                       </div>
                     )}
                   </div>
