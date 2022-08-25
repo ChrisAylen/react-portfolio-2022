@@ -1,5 +1,6 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
+import PageFooterContent from "../../components/pageFooterContent";
 import { RiContactsFill } from "react-icons/ri";
 import "./styles.scss";
 
@@ -45,6 +46,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    
   );
 };
 

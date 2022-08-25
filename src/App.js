@@ -44,6 +44,12 @@ function App() {
           <Route path="/skills" element={<Skills />} />
         </Routes>
       </div>
+      {/* Put a footer in */}
+      <div className='App__footer-wrapper'>
+        <footer className="App__footer">
+          <p>&copy; {new Date().getFullYear()} - Chris Aylen</p>
+          </footer>
+        </div>
     </div>
   );
 }

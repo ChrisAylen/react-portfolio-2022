@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Slab:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root{
 
@@ -33,7 +34,7 @@
   --blue-theme-sub-text-color: #ffffff;
   --blue-theme-nav-background-color: #181818;
 
-  --font-base : "Roboto Slab", serif;
+  --font-base : "Roboto", sans-serif;
 }
 
 *{

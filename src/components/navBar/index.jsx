@@ -6,6 +6,7 @@ import { FaReact, FaBars } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
 import { navMenus } from "./config";
 import "./styles.scss";
+import profileImage from "../../images/profileImage.png";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -15,8 +16,12 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar__container">
           <Link to={"/"} className="navbar__container__logo">
-            <FaReact size={30} />
+            <img className="navbar__container__logo__image" src={profileImage} />
+            {/* <FaReact size={30} /> */}
           </Link>
+          <div className="navbar__container__name">
+            Chris Aylen
+            </div>
           <ul
             className={
               click
