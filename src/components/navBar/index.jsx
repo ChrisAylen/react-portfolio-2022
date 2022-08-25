@@ -8,6 +8,7 @@ import { navMenus } from "./config";
 import "./styles.scss";
 import profileImage from "../../images/profileImage.png";
 
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);

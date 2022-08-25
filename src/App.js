@@ -12,6 +12,7 @@ import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import particlesConfig from './helpers/particlesConfig';
 import Theme from './components/theme';
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 
 
@@ -48,6 +49,12 @@ function App() {
       <div className='App__footer-wrapper'>
         <footer className="App__footer">
           <p>&copy; {new Date().getFullYear()} - Chris Aylen</p>
+          <a href="https://www.linkedin.com/in/chris-aylen-agile-software-development/">
+            <FaLinkedin size={25} />
+          </a>
+          <a href="https://github.com/chrisaylen">
+            <FaGithub size={25} />
+          </a>
           </footer>
         </div>
     </div>

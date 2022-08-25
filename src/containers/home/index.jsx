@@ -28,7 +28,7 @@ const Home = () => {
           
           {/* <a>Download CV</a> */}
         </div>
-        
+        {/* TODO:Pass these as props */}
         <div className="contact-me__socials-wrapper">
         <a href="https://www.linkedin.com/in/chris-aylen-agile-software-development/">
             <FaLinkedin size={32} />
