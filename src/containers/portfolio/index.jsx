@@ -3,7 +3,7 @@ import PageHeaderContent from "../../components/pageHeaderContent";
 import { AiFillProject } from "react-icons/ai";
 import "./styles.scss";
 import { filterOptions, portfolioData } from "./utils";
-
+//TODO:Add links to deployed versions of projects
 const Portfolio = () => {
   const [filterValue, setFilterValue] = useState(1);
   const [hoveredIndex, setHoveredIndex] = useState(null);

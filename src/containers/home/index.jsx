@@ -11,7 +11,7 @@ const Home = () => {
           I'm Chris.
           <br />
           A software <br/>
-          development <br/> consultant
+          development <br/> consultant.
         </h1>
       </div>
       <Animate
